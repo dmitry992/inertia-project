@@ -8,6 +8,8 @@
         <p>Средний рейтинг: <strong>{{ averageRating }}</strong></p>
     </div>
 
+    <Links></Links>
+
     <!-- Список книг -->
     <div class="s-book-list">
         <BookCard
@@ -52,6 +54,7 @@
 <script setup>
 
 import {ref, computed} from 'vue'
+import Links from "@/components/Links.vue";
 import BookCard from "@/components/BookCard.vue";
 import BookForm from "@/components/BookForm.vue";
 import Dialog from "@/components/Dialog.vue";
